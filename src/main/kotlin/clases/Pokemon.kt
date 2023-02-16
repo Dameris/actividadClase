@@ -16,6 +16,7 @@ class Pokemon(id: Int, nombre: String, vida: Int, tipo: Tipo) {
 
     var tipo: String = ""
 
+    var listaTipos = arrayListOf("", "", "", "")
     init {
         this.id = id;
         this.nombre = nombre;
