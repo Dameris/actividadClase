@@ -1,10 +1,10 @@
 package clases
 
-class Ataque(nombre: String, tipo: String, fuerza: Int) {
+class Ataque(nombre: String, tipo: Tipo, fuerza: Int) {
 
     var nombre: String = nombre
 
-    var tipo: String = tipo
+    var tipo: String = tipo.toString()
 
     var fuerza: Int = fuerza
         set(value) {
@@ -15,7 +15,7 @@ class Ataque(nombre: String, tipo: String, fuerza: Int) {
 
     init {
         this.nombre = nombre
-        this.tipo = tipo
+        this.tipo = tipo.toString()
         this.fuerza = fuerza
     }
 

@@ -1,6 +1,6 @@
 package clases
 
-class Pokemon(id: Int, nombre: String, vida: Int, tipo: String) {
+class Pokemon(id: Int, nombre: String, vida: Int, tipo: Tipo) {
 
     var id: Int = 0
         set(value){
@@ -20,7 +20,7 @@ class Pokemon(id: Int, nombre: String, vida: Int, tipo: String) {
         this.id = id;
         this.nombre = nombre;
         this.vida = vida;
-        this.tipo = tipo
+        this.tipo = tipo.toString()
     }
 
     override fun toString(): String {
