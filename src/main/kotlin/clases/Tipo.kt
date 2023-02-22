@@ -10,10 +10,7 @@ class Tipo(tipoPokemon: String) {
         }
 
     init { this.tipoPokemon = tipoPokemon }
-
-    override fun toString(): String {
-        return tipoPokemon.uppercase()
-    }
+    override fun toString(): String { return "Tipo del Pokemon: $tipoPokemon" }
 
     fun efectividad(): String {
         when (tipoPokemon) {
